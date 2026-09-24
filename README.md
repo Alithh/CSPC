@@ -12,3 +12,9 @@ Tests: yes, all passing
 
 Conclusion:
 - I learned how to set up a reproducible environment and track my work with Git. The NumPy version was significantly faster than the pure Python loop. I ran into some Git issues initially but successfully reset and pushed everything to GitHub.
+
+PW1 - Lab B
+
+- The observed decay counts decrease over time, consistent with exponential decay.
+- Comparing to the analytical law N0·e^(-λt) with λ = 0.3, the two curves [matched closely / diverged somewhat] - fill in based on what you actually saw in figure.png.
+- The Snakemake pipeline runs plot_STUDENT.py to regenerate figure.png from decay_observed.csv, and only reruns when the input data or script changes.
