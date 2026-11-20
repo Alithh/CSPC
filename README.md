@@ -18,3 +18,25 @@ PW1 - Lab B
 - The observed decay counts decrease over time, consistent with exponential decay.
 - Comparing to the analytical law N0·e^(-λt) with λ = 0.3, the two curves [matched closely / diverged somewhat] - fill in based on what you actually saw in figure.png.
 - The Snakemake pipeline runs plot_STUDENT.py to regenerate figure.png from decay_observed.csv, and only reruns when the input data or script changes.
+
+PW3 - Data, Distributions, Testing, Causation
+
+Data source: Heart Disease (Cleveland), UCI Machine Learning Repository / Kaggle.
+303 patients, 14 columns. target: 164 healthy (0), 139 disease (1).
+
+Session 1 - Shape of each variable
+![distributions](PW3/distributions.png)
+- age: ...
+- chol: ...
+- trestbps: ...
+- thalach: ...
+
+Session 1 - Normality
+![qqplots](PW3/qqplots.png)
+
+| Variable | Skew | Ex. kurtosis | Shapiro p | Q-Q plot | Verdict |
+|---|---|---|---|---|---|
+| age | -0.21 | -0.53 | 0.0061 | ... | ... |
+| chol | 1.13 | 4.40 | <0.0001 | ... | ... |
+| trestbps | 0.70 | 0.85 | <0.0001 | ... | ... |
+| thalach | -0.53 | -0.07 | 0.0001 | ... | ... |
